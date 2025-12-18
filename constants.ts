@@ -1,5 +1,3 @@
-
-
 import { ColorType, RuleType, PowerUpType } from './types';
 
 // Visual Mapping
@@ -108,12 +106,12 @@ export const CRATE_METADATA: Record<PowerUpType, { label: string; description: s
     },
     [PowerUpType.BLOCKER]: { 
         label: 'BLOCK', 
-        description: 'Spawns construction barriers that block random lanes.', 
+        description: 'Spawns construction barriers that hide items. They are destructible.', 
         score: 3,
         tutorial: [
             "Construction barriers appear.",
-            "One lane becomes impassable.",
-            "Quickly switch to open lanes."
+            "Items are hidden behind them.",
+            "Crash through if target is hidden."
         ]
     },
     [PowerUpType.BLEACH]: { 
